@@ -1,6 +1,194 @@
+/*
 body {
-    /* Set line height to 1.5 times the font size
+    Set line height to 1.5 times the font size
          and use the OS’s UI font as the website font
-       */
+       
     font: 100%/1.5 system-ui;
+  }*/
+
+
+/* ===== Global Layout ===== */
+:root {
+  /* --color-accent: oklch(65% 50% 0); */
+  --color-accent: #004c99;
+}
+
+html {
+  accent-color: var(--color-accent);
+}
+
+body {
+  max-width: 100ch;
+  margin-inline: auto;
+  padding-inline: 1em;
+  font-family: system-ui, sans-serif;
+  line-height: 1.5;
+}
+
+/* ===== Navigation Bar ===== */
+nav ul,
+nav li {
+  display: contents;
+}
+
+nav {
+  display: flex;
+  border-bottom: 1px solid oklch(80% 3% 200);
+  margin-bottom: 1em;
+}
+
+nav a {
+  flex: 1;
+  text-align: center;
+  padding: 0.5em;
+  text-decoration: none;
+  color: inherit;
+}
+
+nav a.current {
+  border-bottom: 0.4em solid oklch(80% 3% 200);
+  padding-bottom: 0.1em;
+}
+
+nav a:hover {
+  border-bottom: 0.4em solid var(--color-accent);
+  background-color: oklch(from var(--color-accent) 95% 5% h);
+}
+
+/* ===== Contact Form Styling ===== */
+input,
+textarea,
+button {
+  font: inherit;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+form {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1em;
+}
+
+form label {
+  display: grid;
+  grid-template-columns: subgrid;
+  grid-column: 1 / -1;
+  gap: 0.5em;
+}
+
+form button {
+  grid-column: 1 / -1;
+}
+
+
+/* ====== Project Grid Layout ====== */
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
+  gap: 1em;
+  padding: 1em;
+}
+
+.projects article {
+  display: grid;
+  grid-template-rows: subgrid;
+  grid-row: span 3;
+  gap: 1em;
+}
+
+/* Reset margin on headings */
+.projects h2 {
+  margin: 0;
+}
+
+
+/* Improve overall heading styles */
+h1 {
+  font-size: 400%;
+  line-height: 1.1;
+  text-wrap: balance;
+  margin: 0.5em 0;
+}
+
+h2, h3, h4, h5, h6 {
+  line-height: 1.1;
+  text-wrap: balance;
+}
+
+/* Make sure images scale well */
+.projects img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+
+
+/* === Resume Page Styles (scoped) === */
+.resume-page {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  padding: 2em;
+  background-color: #fdfdfd;
+  color: #333;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.resume-page h1 {
+  font-size: 400%;
+  margin-bottom: 0.2em;
+  color: #010508;
+  text-align: left;
+}
+
+.resume-page section h2 {
+  font-size: 2em;
+  margin-top: 2em;
+  border-bottom: 2px solid #03080c;
+  padding-bottom: 0.25em;
+  color: #020508;
+}
+
+.resume-page h3 {
+  font-size: 1.25em;
+  margin-bottom: 0.2em;
+}
+
+.resume-page time {
+  font-size: 0.95em;
+  color: #666;
+  display: block;
+  margin-bottom: 0.5em;
+}
+
+.resume-page article ul {
+  list-style-type: disc;
+  margin-left: 1.5em;
+  margin-bottom: 1em;
+}
+
+.resume-page p {
+  margin-bottom: 1em;
+}
+
+.resume-page strong {
+  font-weight: bold;
+  color: #000;
+}
+
+.resume-page section ul {
+  list-style-type: square;
+  margin-left: 1.5em;
+}
+
+@media (max-width: 768px) {
+  .resume-page {
+    padding: 1em;
   }
+}
+
+
+
