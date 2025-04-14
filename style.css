@@ -15,6 +15,7 @@ body {
 
 html {
   accent-color: var(--color-accent);
+  color-scheme: light dark;
 }
 
 body {
@@ -32,8 +33,9 @@ nav li {
 }
 
 nav {
+  --border-color: oklch(50% 10% 200 / 40%);
   display: flex;
-  border-bottom: 1px solid oklch(80% 3% 200);
+  border-bottom: 1px solid var(--border-color);
   margin-bottom: 1em;
 }
 
@@ -52,7 +54,8 @@ nav a.current {
 
 nav a:hover {
   border-bottom: 0.4em solid var(--color-accent);
-  background-color: oklch(from var(--color-accent) 95% 5% h);
+  /* background-color: oklch(from var(--color-accent) 95% 5% h); */
+  background-color: color-mix(in oklch, var(--color-accent), canvas 85%);
 }
 
 /* ===== Contact Form Styling ===== */
@@ -127,7 +130,7 @@ h2, h3, h4, h5, h6 {
 
 
 /* === Resume Page Styles (scoped) === */
-.resume-page {
+/* .resume-page {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.6;
   padding: 2em;
@@ -188,7 +191,51 @@ h2, h3, h4, h5, h6 {
   .resume-page {
     padding: 1em;
   }
+} */
+
+
+/* === Resume Page Styles === */
+.resume-page {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  padding: 2em;
+  background-color: #fdfdfd; /* Light theme background */
+  color: #333; /* Light theme text color */
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* When dark theme is active */
+body.dark-theme .resume-page {
+  background-color: #0d1117; /* Dark theme background */
+  color: #c9d1d9; /* Dark theme text color */
+}
+
+body.dark-theme .resume-page h1 {
+  color: #ffffff; /* Dark theme header color */
+}
+
+body.dark-theme .resume-page section h2 {
+  color: #ffffff; /* Dark theme section title */
+  border-bottom: 2px solid #30363d; /* Dark theme border */
+}
+
+body.dark-theme .resume-page strong {
+  color: #ffffff; /* Dark theme strong text */
+}
+
+body.dark-theme .resume-page time {
+  color: #8b949e; /* Dark theme time color */
 }
 
 
+/*=======Theme Dropdown Button=======*/
+
+.color-scheme {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 80%;
+  font-family: inherit;
+}
 

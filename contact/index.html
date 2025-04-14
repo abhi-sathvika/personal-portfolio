@@ -5,20 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
     <link rel="stylesheet" href="../style.css">
+    <script type="module" src="../global.js"></script>
 </head>
 <body>
 
-    <nav>
+    <!-- <nav>
         <ul>
             <li><a href="../index.html">Home</a></li>
             <li><a href="../projects/index.html">Projects</a></li>
             <li><a href="../resume/index.html">Resume</a></li>
-            <li><a class="current" href="index.html">Contact</a></li>
+            <li><a href="index.html">Contact</a></li>
             <li><a href="https://github.com/abhi-sathvika" target="_blank">GitHub</a></li>
         </ul>
-    </nav>
+    </nav> -->
 
     <h1>Contact</h1>
+
+    <form action="mailto:your-email@example.com" method="GET" id="contact-form">
+      <label>
+        Subject:
+        <input type="text" name="subject" required>
+      </label>
+      <label>
+        Message:
+        <textarea name="body" required></textarea>
+      </label>
+      <button type="submit">Send</button>
+    </form>
 
     <!-- <form action="mailto:agoriparthy@ucsd.edu" method="POST" enctype="text/plain">
         <label for="email">Your Email:</label>
@@ -34,7 +47,7 @@
         
     </form> -->
 
-    <form action="mailto:agoriparthy@ucsd.edu" method="POST" enctype="text/plain">
+    <!-- <form action="mailto:agoriparthy@ucsd.edu" method="POST" enctype="text/plain">
         <label>
           Your Email:
           <input type="email" name="email">
@@ -51,7 +64,7 @@
         </label>
       
         <button>Send Email</button>
-      </form>
+      </form> -->
 
 
     
