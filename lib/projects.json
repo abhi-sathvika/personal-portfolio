@@ -1,0 +1,74 @@
+[
+    {
+        "title": "Exploratory Data Analysis with Pandas",
+        "year": "2023",
+        "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "description": "Analyzed a dataset from Kaggle, performing exploratory data analysis using Pandas and Matplotlib. Focused on data cleaning, handling missing values, and basic statistical analysis."
+    },
+    {
+        "title": "Regression Analysis for Housing Prices",
+        "year": "2023",
+        "image": "https://images.unsplash.com/photo-1743486780771-afd09eea3624?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "description": "Built a linear regression model to predict housing prices based on features such as square footage, number of bedrooms, and location. Evaluated model performance using mean squared error."
+    },
+    {
+        "title": "Classification of Email Spam",
+        "year": "2023",
+        "image": "https://plus.unsplash.com/premium_photo-1661375025352-d5a4d633999b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "description": "Developed a Naive Bayes classifier to categorize emails as spam or not spam. Applied text preprocessing techniques, such as tokenization and TF-IDF vectorization."
+    },
+    {
+        "title": "Data Visualization of Movie Ratings",
+        "year": "2023",
+        "image": "https://plus.unsplash.com/premium_photo-1710522706751-c2f0c76cc5fd?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "description": "Created interactive visualizations of movie ratings over time using Plotly and Dash. Focused on understanding trends and distribution of ratings in a dataset of 1000+ movies."
+    },
+    {
+        "title": "Predicting Student Performance",
+        "year": "2024",
+        "image": "https://images.unsplash.com/photo-1497633762265-9d179a990aa6?q=80&w=2946&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "description": "Used machine learning algorithms like logistic regression and decision trees to predict student performance in exams based on demographic and behavioral data."
+    },
+    {
+        "title": "Clustering Analysis of Customer Segments",
+        "year": "2024",
+        "image": "https://plus.unsplash.com/premium_photo-1664475769859-b6dd3a48dabc?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "description": "Applied k-means clustering to segment customers based on purchasing behavior. Analyzed the results to identify distinct customer groups for targeted marketing."
+    },
+    {
+        "title": "Text Classification with NLP Techniques",
+        "year": "2024",
+        "image": "https://images.unsplash.com/photo-1597392582469-a697322d5c16?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "description": "Built a text classification model using Natural Language Processing (NLP) techniques such as word embeddings and recurrent neural networks to categorize movie reviews as positive or negative."
+    },
+    {
+        "title": "Data Cleaning and Feature Engineering for Financial Dataset",
+        "year": "2024",
+        "image": "https://images.unsplash.com/photo-1593672755342-741a7f868732?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "description": "Performed extensive data cleaning and feature engineering on a financial dataset, handling missing values, normalizing numerical features, and creating new features to improve model accuracy."
+    },
+    {
+        "title": "Analyzing Traffic Patterns with Data Science",
+        "year": "2024",
+        "image": "https://images.unsplash.com/photo-1473042904451-00171c69419d?q=80&w=2998&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "description": "Analyzed traffic data to predict peak traffic hours and suggest potential improvements using regression analysis and time series forecasting."
+    },
+    {
+        "title": "Building a Recommendation System",
+        "year": "2025",
+        "image": "https://plus.unsplash.com/premium_photo-1681488350342-19084ba8e224?q=80&w=2888&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "description": "Developed a collaborative filtering recommendation system to suggest products based on user behavior. Implemented using Python and the Surprise library."
+    },
+    {
+        "title": "Visualizing Global Health Indicators",
+        "year": "2025",
+        "image": "https://plus.unsplash.com/premium_photo-1673953509975-576678fa6710?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "description": "Created visualizations to display key global health indicators, such as life expectancy and vaccination rates, across different countries using Python's Matplotlib and Seaborn."
+    },
+    {
+        "title": "Time Series Analysis of Stock Prices",
+        "year": "2025",
+        "image": "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "description": "Applied time series analysis techniques to forecast stock prices based on historical data. Used ARIMA models and evaluated prediction accuracy using RMSE."
+    }
+]

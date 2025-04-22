@@ -239,3 +239,71 @@ body.dark-theme .resume-page time {
   font-family: inherit;
 }
 
+
+/*========== Git Hub Stats==========*/
+
+/* #profile-stats dl.github-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  text-align: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+#profile-stats dt {
+  font-weight: bold;
+  grid-row: 1;
+}
+
+#profile-stats dd {
+  margin: 0;
+  grid-row: 2;
+} */
+
+#profile-stats {
+  font-family: 'Arial', sans-serif;
+  padding: 1rem;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+}
+
+#profile-stats h2 {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+#profile-stats dl.github-grid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+#profile-stats div {
+  display: flex;
+  flex-direction: column;
+  width: 23%; /* Ensure that all items fit in a single row */
+  text-align: left;
+}
+
+#profile-stats dt {
+  font-weight: bold;
+  color: #555;
+  font-size: 1rem;
+  margin-bottom: 0.5rem; /* Adds a little space between dt and dd */
+}
+
+#profile-stats dd {
+  font-size: 1rem;
+  color: #0073e6;
+  font-weight: bold;
+  margin: 0;
+}
+
+
