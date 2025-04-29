@@ -106,6 +106,86 @@ form button {
   margin: 0;
 }
 
+.project-info .year {
+  color: gray;
+  font-family: Baskerville, serif;
+  font-variant-numeric: oldstyle-nums;
+  margin: 0; /* Optional: to align nicely */
+}
+
+
+#projects-pie-plot {
+  max-width: 20em;
+  margin-block: 2em;
+
+  overflow: visible;
+}
+
+.container {
+  display: flex;
+  align-items: center;       /* Align chart and legend vertically */
+  gap: 1.5em;                /* Space between chart and legend */
+  justify-content: flex-start;   /* Center everything horizontally */
+  flex-wrap: wrap;           /* Stack on smaller screens */
+}
+
+svg {
+  width: 300px;              /* Set a responsive width */
+  height: 300px;
+  flex-shrink: 0;            /* Prevent shrinking */
+}
+
+
+.legend {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(9em, 1fr));
+  border: 1px solid #ccc;
+  padding: 1em;
+  margin-top: 1em;
+  gap: 1em;
+  background-color: #fafafa;
+  font-family: sans-serif;
+  list-style: none;
+  flex: 1;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.swatch {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  background-color: var(--color);
+  border-radius: 0.5em;
+}
+
+svg:has(path:hover) path:not(:hover) {
+  opacity: 0.5;
+}
+
+path {
+  transition: 300ms;
+  cursor: pointer;
+}
+
+
+.selected {
+  --color: oklch(60% 45% 0) !important;
+}
+
+.selected:is(path) {
+  fill: var(--color);
+}
+
+.selected:is(li) {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
 
 /* Improve overall heading styles */
 h1 {
