@@ -386,4 +386,117 @@ body.dark-theme .resume-page time {
   margin: 0;
 }
 
+/*=======Meta Analysis============*/
 
+.summary {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.summary h2 {
+  font-size: 1 rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 2rem;
+  text-align: center;
+}
+
+.stat .label {
+  font-size: 0.75rem;
+  letter-spacing: 1px;
+  color: #6b7280; /* Tailwind gray-500 */
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+.stat .value {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #000;
+}
+
+.gridlines line {
+  stroke-opacity: 0.5;   /* Make it semi-transparent */
+  shape-rendering: crispEdges;
+  stroke-width: 1;
+  color: #babdc4;
+}
+
+.gridlines path {
+  display: none;         /* Hide the axis path line */
+}
+
+
+/*=====Step 3=====*/
+/* Shared layout for all definition lists with info */
+dl.info {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 0.25em 0.75em;
+  margin: 0;
+  padding: 0.75em 1em;
+  background-color: rgba(255, 255, 255, 0.9);
+  border: 1px solid #ccc;
+  border-radius: 0.5em;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  font-family: sans-serif;
+  font-size: 0.9rem;
+  pointer-events: none;
+  transition-duration: 300ms;
+  transition-property: opacity, visibility;
+  position: fixed;
+  z-index: 10;
+}
+
+dl.info[hidden]:not(:hover, :focus-within) {
+  opacity: 0;
+  visibility: hidden;
+}
+
+/* Tooltip-specific positioning */
+.tooltip {
+  position: fixed;
+  top: 1em;
+  left: 1em;
+  z-index: 10;
+}
+
+/* Smooth scaling on hover */
+circle {
+  transition: 200ms;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+circle:hover {
+  transform: scale(1.5);
+}
+
+/*===Step 5===*/
+
+circle.selected {
+  fill: #ff6b6b;
+  stroke: black;
+  stroke-width: 1px;
+}
+
+#language-breakdown {
+  margin-top: 1em;
+  font-family: sans-serif;
+}
+
+#language-breakdown dt {
+  font-weight: bold;
+  margin-top: 0.5em;
+}
+
+#language-breakdown dd {
+  margin-left: 1em;
+  margin-bottom: 0.5em;
+}
