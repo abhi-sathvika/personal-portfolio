@@ -13,13 +13,24 @@
     <h1>Meta Analysis</h1>
     <p>This page contains statistics about the structure and contents of my projects.</p>
 
+    <div id="timeSliderContainer" style="display: flex; align-items: baseline; margin-bottom: 10px;">
+        <label for="timeSlider" style="flex: 1;">Show commits until:</label>
+        <input id="timeSlider" type="range" min="0" max="100" value="100" style="flex: 3;">
+        <time id="selectedTime" style="margin-left: auto;">Loading...</time>
+    </div>
+
     <section class="summary">
-        <h2>Summary</h2>
         <div id="stats" class="stats-grid"></div>
     </section>
 
     <h2>Commits by time of day</h2>
-    <div id="chart"></div>
+    <div id="scrollytelling">
+        <div id="scroll-container">
+            <div id="spacer"></div>
+            <div id="items-container"></div>
+        </div>
+        <div id="chart"></div> <!-- scatterplot -->
+    </div>
 
     <dl id="commit-tooltip" class="info tooltip" hidden>
         <dt>Commit</dt>
@@ -33,6 +44,18 @@
     <p id="selection-count">No commits selected</p>
 
     <dl id="language-breakdown" class="stats"></dl>
+
+    <dl class="files"></dl>
+
+    <!-- Second Scrollytelling: File Sizes -->
+    <!-- <div id="file-scrollytelling">
+        <div id="file-scroll-container">
+            <div id="file-spacer"></div>
+            <div id="file-items-container"></div>
+        </div>
+
+        <dl class="files"></dl>
+    </div> -->
 
 </body>
 </html>
