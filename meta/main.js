@@ -52,7 +52,7 @@ function updateTimeDisplay() {
 
   filterCommitsByTime();
   updateScatterPlot(data, filteredCommits);
-
+  displayCommitFiles();
 }
 
 timeSlider.addEventListener("input", updateTimeDisplay);
@@ -121,9 +121,9 @@ function renderCommitInfo(data, commits) {
 }
 
 function updateScatterPlot(data, commits) {
-  const width = 1000;
-  const height = 600;
-  const margin = { top: 10, right: 10, bottom: 30, left: 40 };
+  const width = 800;
+  const height = 400;
+  const margin = { top: 160, right: 10, bottom: 1, left: 40 };
 
   d3.select('#chart').select('svg').remove();
 
